@@ -5,6 +5,18 @@ const counter = require('./counter-service');
 const queryType = new GraphQLObjectType({
   name: 'Query',
   fields: {
+    counter: {
+      type: GraphQLInt,
+      resolve() {
+        return counter.getCounter();
+      }
+    }
+  }
+})
+
+const mutationType = new GraphQLObjectType({
+  name: 'Mutation',
+  fields: {
     addCounter: {
       type: GraphQLInt,
       resolve() {
@@ -15,7 +27,8 @@ const queryType = new GraphQLObjectType({
 })
 
 const schema = new GraphQLSchema({
-  query: queryType
+  query: queryType,
+  mutation: mutationType
 });
 
 module.exports = schema;
