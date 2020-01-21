@@ -1,8 +1,8 @@
-## Button Game (backend)
+## Button Game (Backend / GraphQL API)
 
 Node.js / Express / GraphQL server for a simple button pressing game
 
-Deployed in heroku: [wece-counter-game.herokuapp-server.com/graphql](http://wece-counter-game.herokuapp-server.com/graphql)
+Deployed in heroku: [wece-counter-game-server.herokuapp.com/graphql](http://wece-counter-game-server.herokuapp.com/graphql)
 
 Related to frontend implemented in [github.com/WeceW/button-game-client](https://github.com/WeceW/button-game-client)
 
